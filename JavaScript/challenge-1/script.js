@@ -98,3 +98,32 @@ while(100 >= firstN){
 console.log("Even numbers from 1 to 100 \n Code by for")
 for(let i = 2;i <= 100;i=i+2)
    console.log("number ",i)
+
+///                   DESAFIO 4 - FUNÇÕES
+
+//1 - crie uma função que exiba uma mensagem no console
+function msg(x){
+    console.log("Bom dia",x,"!")
+}
+
+msg("Mundo")
+//2 - crie uma função que receba o seu nome como (parâmetro) e exiba no console
+function myname(name){
+    console.log("Meu nome é",name)
+}
+
+myname("Victor")
+
+//4 - crie uma função que receba o seu filme favorito, musica favorita (parâmetros) e exiba no console
+function infos(movie,music){
+    console.log("Meu filme favorito é",movie,"e minha música favorita é",music)
+}
+
+infos("As branquelas","quem tem um amigo tem tudo (Emicida)")
+
+//5 - crie uma função que retorne o triplo do número recebido no parâmetro da função
+function triple(x){
+    return x*3
+}
+
+console.log(triple(9))
