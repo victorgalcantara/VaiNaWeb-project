@@ -127,3 +127,33 @@ function triple(x){
 }
 
 console.log(triple(9))
+
+///                   DESAFIO 5 - ARRAY
+
+ // Crie um array que receba 5 itens e exiba no console.
+
+ let idade = [22,25,33,21,23]
+
+ // Utilize um método para adicionar um nome ao inicio do array.
+idade.unshift(25)
+console.log(idade)
+
+idade.splice(1,1,28)
+console.log(idade)
+
+ // Utilize um método para remover o último nome do array.
+idade.splice(5,1)
+console.log(idade)
+
+// Utilize um método para adicionar dois nomes ao fim do array.
+idade.splice(5,2,"nome1","nome2")
+console.log(idade)
+
+// Utilize um método para remover o primeiro nome do array.
+idade.splice(0,1)
+console.log(idade)
+
+// Utilize um método para organizar em ordem crescente o seguinte array:
+let numbers = [7,5,6,3,8,9,2,1,4]
+numbers.sort(numbers)
+console.log(numbers)
