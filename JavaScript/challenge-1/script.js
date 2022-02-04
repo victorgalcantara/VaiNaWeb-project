@@ -4,7 +4,7 @@ let firstName = "Victor"
 let lastName  = "Alcantara"
 
 // Crie uma variável que receba um número;
-let age  = "24"
+let age  = 24
 
 // Crie uma variável com o ano atual e subtraia pelo número que você guardou;
 let year = 2022
@@ -12,7 +12,7 @@ let yearBirth = year - age
 
 // Agora mostre no console o resultado da soma das duas variáveis guardadas 
 // anteriormente;
-console.log(age,yearBirth)
+console.log(age+yearBirth)
 
 //Mostre no console a mensagem "Estou mexendo no console.log";
 console.log("Estou mexendo no console")
@@ -52,9 +52,9 @@ if(monthBirth == "janeiro" || monthBirth == "dezembro"){
 // se seu nome começar com a letra R
 firstLetter = firstName.substring(0,1)
 if(firstLetter == "V"){
-    console.log("O nome começa com a letra "+'"'+firstLetter+'"')
+    console.log("O nome começa com a letra",firstLetter)
 }else{
-    console.log("O nome não começa com a letra "+'"'+firstLetter+'"')
+    console.log("O nome não começa com a letra",firstLetter)
 }
 
 //5 - Criar uma condição que exiba uma mensagem no console se seu sobrenome 
@@ -83,7 +83,7 @@ while(100 >= firstN2){
 }
 console.log("Odd numbers from 1 to 100 \n Code by for")
 // com for
-for(let i = 1;i <= 100;i+=2)
+for(let i = 1;i <= 100;i = i + 2)
     console.log("number ",i)
 
 // 4 - Criar um loop que conte todos os números pares de 0 a 100
@@ -103,7 +103,7 @@ for(let i = 2;i <= 100;i=i+2)
 
 //1 - crie uma função que exiba uma mensagem no console
 function msg(x){
-    console.log("Bom dia",x,"!")
+    console.log("Bom dia",x+"!")
 }
 
 msg("Mundo")
@@ -154,6 +154,105 @@ idade.splice(0,1)
 console.log(idade)
 
 // Utilize um método para organizar em ordem crescente o seguinte array:
-let numbers = [7,5,6,3,8,9,2,1,4]
-numbers.sort(numbers)
-console.log(numbers)
+// let numbers = [7,5,6,3,8,9,2,1,4]
+// numbers.sort(numbers)
+// console.log(numbers)
+
+///                   DESAFIO 5 - ARRAY E OBJETO
+
+// Crie um objeto que receba ao menos três propriedades sobre você.
+let me = {
+    name: "Victor",
+    age: 23,
+    profession: "sociology"
+}
+console.log(me.age)
+// Adicione uma nova propriedade sem alterar seu objeto inicial.
+me.team = "Santos"
+console.log(me)
+
+// Remova uma propriedade desse objeto.
+delete me.team
+
+//Mostre no console todas as propriedades desse objeto.
+console.log(me)
+
+// Crie um array  chamado "cadastro" contendo ao menos 5 objetos. 
+let cadastro = [
+    {
+        client: 1
+    },
+    {
+        client: 2
+    },
+    {
+        client: 3
+    },
+    {
+        client: 4
+    },
+    {
+        client: 5
+    }
+]
+console.log(cadastro)
+
+//Cada objeto deve receber as seguintes propriedades: nome,  idade,  telefone, amigos. 
+cadastro[0] = {
+    nome: "Victor",
+    idade: 15,
+    humano: true,
+    telefone: 40028922,
+    amigos: ["João","José","Renildo"]
+}
+
+cadastro[1] = {
+    nome: "Eduarda",
+    idade: 17,
+    humano: true,
+    telefone: 40028322,
+    amigos: ["Victor","José","Renildo"]
+}
+
+cadastro[2] = {
+    nome: "Renildo",
+    idade: 20,
+    humano: true,
+    telefone: 40024922,
+    amigos: ["João","Victor","Eduarda"]
+}
+
+cadastro[3] = {
+    nome: "João",
+    idade: 19,
+    humano: true,
+    telefone: 40023922,
+    amigos: ["Victor","José","Renildo"]
+}
+
+cadastro[4] = {
+    nome: "José",
+    idade: 21,
+    humano: true,
+    telefone: 43028922,
+    amigos: ["João","Eduarda","Renildo"]
+}
+
+//Na propriedade amigos, adicione ao menos 4 itens.
+cadastro[0].amigos.unshift("Nalva","Antônio","André","Marília")
+cadastro[1].amigos.unshift("Nalva","Antônio","André","Marília")
+cadastro[2].amigos.unshift("Nalva","Antônio","André","Marília")
+cadastro[3].amigos.unshift("Nalva","Antônio","André","Marília")
+
+
+console.log(
+    cadastro[0].amigos
+    )
+
+// Mostre no console o nome de um amigo de cada lista.
+console.log(
+    "\n Lista",1,cadastro[0].amigos[0],
+    "\n Lista",2,cadastro[1].amigos[1],
+    "\n Lista",3,cadastro[2].amigos[2],
+    "\n Lista",4,cadastro[3].amigos[3]
+    )
