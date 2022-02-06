@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header{
+    background-color: #129799;
+    width: 100vw;
+    height: 80vh;    
+  }
+
+header .menu1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top: 20px;   
+    font-family: roboto;
+    font-size: 20px;
+    color:#ffffff;
+   }
+
+header .presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+.presentation h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: roboto;
+    position:relative;
+    top:15px;
+}
+
+header .menu2{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top:100px;
+    font-family: roboto;
+    font-size: 25px;
+    color:#FFFFFF;
+    list-style-type: none;
+}
+
+main{
+    width: 100vw;
+    height: 160vh;  
+    background-color: #FFA185;
+}
+
+main .presentation{
+    height: 20vh;
+}
+
+main .presentation h2{
+display: flex;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+color: #FFFFFF;
+}
+
+main .presentation p{
+display: flex;
+font-family: Roboto;
+font-style: normal;
+font-size: 20px;
+color: #00000;
+}
+
+main .images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+main h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+footer{
+    background-color: #129799;
+    width: 100vw;
+    height: 20vh;
+}
+
+footer .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    right: 100px;
+    font-size: 20px;
+    font-family: roboto;
+    color: #ffffff;
+    list-style-type: none;
+}
+
+footer .icons-socialmedia{
+    display: flex;
+    justify-content: flex-start;
+    position:relative;
+    top:45px;
+    left: 50px;
+}
+
+li{
+    margin-left: 1.25rem;
+ }
+  li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
