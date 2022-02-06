@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: #2CB3F3;
+    height: 80vh;
+}
+
+.text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position:relative;
+top:80px;
+font-size: 30px;
+}
+
+.text p{
+position:relative;
+bottom:170px;
+}
+
+.body-finn{
+background-color: #FFFF;
+width: 880px;
+height: 616px;
+border-radius: 100px 100px 0 0;
+position:absolute;
+left: 243px;
+top: 245px;
+}
+
+.head-finn{
+    background: #FFE1C9;
+    width: 692px;
+    height: 487px;
+    position:relative;
+    left: 90px;
+    top: 90px;
+    border-radius: 100% 100% 100% 100%;
+}
+
+.eye-left{
+    background-color: black;
+    width: 55.7px;
+    height: 55.7px;
+    position:relative;
+    left: 130px;
+    top: 130px;
+    border-radius: 100% 100% 100% 100%;
+}
+
+.eye-right{
+    background-color: black;
+    width: 55.7px;
+    height: 55.7px;
+    position:absolute;
+    left: 450px;
+    top: 130px;
+    border-radius: 100%;
+}
+
+form{
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 200px;
+left: 200px;
+width: 300px;
+height: 100px;
+}
+form .email{
+display: flex;
+justify-content: flex-start;
+align-items: baseline;
+position: relative;
+bottom:0px;
+width: 300px;
+height: 60px;
+border-radius: 5px;
+border: 3px solid #000000;
+color: grey;
+background-color: white;
+font-size: 15px;
+}
+
+form .password{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    top:10px;
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    border: 3px solid #000000;
+    text-decoration-color: grey;
+    background-color: white;
+    color: grey;
+    font-size: 15px;
+    }
+
+.bottom-enter{
+background-color: #55A603;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 900px;
+left: 600px;
+width: 170px;
+height: 60px;
+border-radius: 5px;
+font-size: 20px;
+color: white;
+border-color:#55A603;
+}
